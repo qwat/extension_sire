@@ -14,6 +14,8 @@ CREATE OR REPLACE VIEW qwat_ch_vd_sire.regulation_pression AS
 		watertype_code_sire AS "Type_Eau",
 		CASE
 			WHEN installation_type = 'pump'::qwat_od.installation_type THEN 2
+			WHEN fk_pressurecontrol_type = 2801 THEN 1
+			WHEN fk_pressurecontrol_type = 2802 THEN 0
 			ELSE 0
 		END AS "Genre",
 		altitude AS "Altitude",
