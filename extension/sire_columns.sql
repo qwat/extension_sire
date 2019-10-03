@@ -640,13 +640,13 @@ UPDATE qwat_vl.precision SET code_sire=0 WHERE id=1102;
 UPDATE qwat_vl.precision SET code_sire=1 WHERE id=1103;
 UPDATE qwat_vl.precision SET code_sire=1 WHERE id=1104;
 
-ALTER TABLE qwat_vl.precision_alti ADD COLUMN code_sire smallint;
-UPDATE qwat_vl.precision_alti SET code_sire=1 WHERE id=102;
-UPDATE qwat_vl.precision_alti SET code_sire=1 WHERE id=1121;
-UPDATE qwat_vl.precision_alti SET code_sire=0 WHERE id=1122;
-UPDATE qwat_vl.precision_alti SET code_sire=0 WHERE id=1123;
-UPDATE qwat_vl.precision_alti SET code_sire=0 WHERE id=1124;
-UPDATE qwat_vl.precision_alti SET code_sire=0 WHERE id=1125;
+ALTER TABLE qwat_vl.precisionalti ADD COLUMN code_sire smallint;
+UPDATE qwat_vl.precisionalti SET code_sire=1 WHERE id=102;
+UPDATE qwat_vl.precisionalti SET code_sire=1 WHERE id=1121;
+UPDATE qwat_vl.precisionalti SET code_sire=0 WHERE id=1122;
+UPDATE qwat_vl.precisionalti SET code_sire=0 WHERE id=1123;
+UPDATE qwat_vl.precisionalti SET code_sire=0 WHERE id=1124;
+UPDATE qwat_vl.precisionalti SET code_sire=0 WHERE id=1125;
 
 ALTER TABLE qwat_vl.pump_operating ADD COLUMN code_sire smallint;
 UPDATE qwat_vl.pump_operating SET code_sire=0 WHERE id=102;
